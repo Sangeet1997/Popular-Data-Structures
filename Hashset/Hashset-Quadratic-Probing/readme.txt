@@ -4,6 +4,7 @@
 4. better hash function to reduce clusturing
 5. load factor monitoring
 6. size tracking, capacity management/dynamic resizing
+7, infinite loop checks
 
 
 Why 31?
