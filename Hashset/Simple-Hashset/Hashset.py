@@ -9,7 +9,7 @@ class Hashset:
         self.arr = [None] * 1000
         
     def calculate_hash(self, val):
-        hash = val%1000
+        hash = (val*31)%1000
         return hash
     
     def add(self, val):
