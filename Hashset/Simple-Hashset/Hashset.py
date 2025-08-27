@@ -16,14 +16,14 @@ class Hashset:
         hash = self.calculate_hash(val)
         if self.arr[hash]:
             curr = self.arr[hash]
-            if curr.val == val:
-                print("Element already in hashset.")
-                return
             while curr.next:
                 if curr.val == val:
                     print("Element already in hashset.")
                     return
                 curr = curr.next
+            if curr.val == val:
+                print("Element already in hashset.")
+                return
             curr.next = LinkedList(val)
         else:
             self.arr[hash] = LinkedList(val)
