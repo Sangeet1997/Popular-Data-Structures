@@ -1,0 +1,1 @@
+print(myobject) internally does str(myobject)
