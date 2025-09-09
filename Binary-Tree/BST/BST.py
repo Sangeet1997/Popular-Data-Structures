@@ -139,22 +139,22 @@ class BST:
                 return
             
     def inorder(self):
-        self.res = ""
+        self.res = []
         def dfs(root):
             if not root:
                 return
             dfs(root.left)
-            self.res = self.res + str(root.val) + "->"
+            self.res.append(root.val)
             dfs(root.right)
         dfs(self.root)
         return self.res
     
     def preorder(self):
-        self.res = ""
+        self.res = []
         def dfs(root):
             if not root:
                 return
-            self.res = self.res + str(root.val) + "->"
+            self.res.append(root.val)
             dfs(root.left)
             dfs(root.right)
         dfs(self.root)
@@ -165,13 +165,150 @@ class BST:
         def dfs(root):
             if not root:
                 return
-            self.res = self.res + str(root.val) + "->"
+            self.res.append(root.val)
             dfs(root.left)
             dfs(root.right)
         dfs(self.root)
         return self.res
-       
+    
+    def levelorder(self):
+        res = []
+        i = 0
+        q = [self.root]
+        while i < len(q):
+            ele = q[i]
+            i += 1
+            res.append(ele.val)
+            if ele.left:
+                q.append(ele.left)
+            if ele.right:
+                q.append(ele.right)
+        return res
+    
+    #list of utility/advanced functions
+    def height(self):
+        if not self.root:
+            return 0
+        h = 1
+        curr = self.root
+        
+        q = [self.root,None]
+        i = 0
 
+        while i < len(q) - 1:
+            ele = q[i]
+            i += 1
+            if not ele:
+                q.append(None)
+                h += 1
+                continue
+            if ele.left:
+                q.append(ele.left)
+            if ele.right:
+                q.append(ele.right)
+        
+        return h
+    
+    def is_balanced(self):
+        self.res = True
+        def dfs(root):
+            if not root:
+                return 0
+            
+            x = dfs(root.left)
+            y = dfs(root.right)
+            if abs(x-y) > 1:
+                self.res = False
+            return max(x,y) + 1
+        dfs(self.root)
+        return self.res
+    
+    def count_node(self):
+        return self.size
+    
+    def count_leaves(self):
+        self.res = 0
+        def dfs(root):
+            if not root: 
+                return
+            if root.left:
+                dfs(root.left)
+            if root.right:
+                dfs(root.right)
+            if not root.left and not root.right:
+                self.res += 1
+        return self.res
+    
+    def LCA(self, val1, val2):
+        curr = self.root
+        if val1 > val2:
+            val1, val2 = val2, val1
+        while curr:
+            if (curr.val > val1 and curr.val < val2) or curr.val == val1 or curr.val == val2:
+                return curr.val
+            if curr.val < val1:
+                curr = curr.left
+            else:
+                curr = curr.right
+    
+    def predecessor(self, val):
+        self.prev = None
+        self.res = None
+
+        def dfs(root, target):
+            if self.res:
+                return
+            if not root:
+                return
+            dfs(root.left, target)
+            if root.val == target:
+                self.res = self.prev
+                return
+            self.prev = root
+            dfs(root.right, target)
+        
+        if not self.res:
+            raise ValueError("No Predecessor.")
+        return self.res
+        
+    def successor(self, val):
+        self.prev = None
+        self.res = None
+        
+        def dfs(root, target):
+            if not root:
+                return
+            if self.res:
+                return
+            dfs(root.left, target)
+            if self.prev:
+                if self.prev.val == target:
+                    self.res = root
+                self.prev = root
+            dfs(root.right, target)
+
+        if not self.res:
+            raise ValueError("No Successor")
+        return self.res
+    
+    def serialize(self):
+        res = []
+        q = [self.root]
+        i = 0
+        while i < len(q):
+            ele = q[i]
+            i += 1
+            if ele:
+                res.append(ele.val)
+                q.append(ele.left)
+                q.append(ele.right)
+            else:
+                res.append(None)
+        return res        
+    
+    
+            
+            
     
 if __name__ == "__main__":
     print("Hello World")
