@@ -1,0 +1,85 @@
+# Data Structures to Build
+
+## Linear Data Structures
+
+### Arrays
+- Dynamic Arrays (like ArrayList in Java or Vector in C++)
+
+### Linked Lists
+- Singly Linked List
+- Doubly Linked List - Test Left
+- Circular Linked List (Singly and Doubly)
+
+### Stacks
+- Array-based Stack
+- Linked List-based Stack
+
+### Queues
+- Simple Queue (FIFO - First-In, First-Out)
+- Circular Queue
+- Priority Queue (using a heap)
+- Deque (Double-Ended Queue)
+
+## Non-Linear Data Structures
+
+### Trees
+
+#### Binary Search Trees (BSTs)
+- Standard BST - tests left
+
+#### Self-Balancing BSTs
+- AVL Tree
+- Red-Black Tree
+- Splay Tree
+
+#### Heaps
+- Min-Heap
+- Max-Heap
+
+#### B-Trees
+- Standard B-Tree
+- B+ Tree
+- B* Tree
+
+#### Tries (Prefix Trees)
+- Standard Trie
+- Compressed Trie (Radix Tree)
+
+### Graphs
+
+#### Representations
+- Adjacency Matrix
+- Adjacency List
+
+#### Types
+- Directed Graph
+- Undirected Graph
+- Weighted Graph
+- Unweighted Graph
+
+### Hash-based Structures
+
+#### Hash Tables / Hash Maps
+- Implementation with separate chaining
+- Implementation with open addressing (linear probing, quadratic probing, double hashing)
+
+#### Hash Sets
+
+## Specialized and Abstract Data Structures
+
+### Sets
+- Sorted Sets (often implemented with balanced binary search trees)
+- Unsorted Sets (often implemented with hash tables)
+
+### Disjoint Set Union (DSU) / Union-Find
+- Union by rank/size
+- Path compression
+
+### Graphs and Related Structures
+- Directed Acyclic Graph (DAG)
+- Minimum Spanning Tree (MST) - while this is an algorithm, the underlying structure and its variations (Prim's vs. Kruskal's) are often included as a data structure concept.
+
+### Geometric Data Structures
+- K-D Tree
+- Quadtree / Octree
+
