@@ -8,7 +8,7 @@
 ### Linked Lists
 - Singly Linked List
 - Doubly Linked List - Test Left
-- Circular Linked List (Singly and Doubly)
+- Circular Linked List - Test left
 
 ### Stacks
 - Array-based Stack
