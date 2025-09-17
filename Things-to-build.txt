@@ -42,7 +42,7 @@
 - B* Tree
 
 #### Tries (Prefix Trees)
-- Standard Trie
+- Standard Trie - search with ".", left
 - Compressed Trie (Radix Tree)
 
 ### Graphs
@@ -83,3 +83,16 @@
 - K-D Tree
 - Quadtree / Octree
 
+Tips:
+
+🔹 Don’t just dump code — add clear documentation (README, usage examples, complexity analysis).
+
+🔹 Include unit tests to show software engineering discipline.
+
+🔹 Maybe add visualizations (e.g., graphs for trees, linked list diagrams) for extra polish.
+
+🔹 Organize repo well (one folder per structure, with explanation).
+
+🔹 Go beyond basics: arrays, linked lists, stacks, queues, trees, graphs, heaps, hash maps… maybe even some advanced ones (tries, segment trees, bloom filters).
+
+👉 If you want it to really shine for recruiters, frame it not just as “I implemented data structures”, but as “I built an educational library showcasing the implementation, usage, and performance of core data structures in Python.”
