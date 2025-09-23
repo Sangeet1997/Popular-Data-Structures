@@ -33,8 +33,9 @@
 - Splay Tree
 
 #### Heaps
-- Min-Heap
-- Max-Heap
+- Heap (Tree Implementation) (done - tests remaining)
+- Heap (Array Implementation)
+
 
 #### B-Trees
 - Standard B-Tree
