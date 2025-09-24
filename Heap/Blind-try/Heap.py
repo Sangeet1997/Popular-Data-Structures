@@ -1,5 +1,8 @@
 from collections import defaultdict
-
+"""
+This is a tree implementation
+List implementation is much faster
+"""
 class Node:
     def __init__(self, val = 0):
         self.val = val
