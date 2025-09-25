@@ -1,0 +1,15 @@
+Time taken to generate 1M numbers:              480.7544 ms
+Time taken to initialize heap1 with array:      730.0152 ms
+Time taken to build heap2 with push operations: 332.0532 ms
+Time taken to sort array with built-in sort:    142.1048 ms
+Time taken to build heap3 with heapq heapify:   46.6959 ms
+Time taken to build heap4 with heapq push:      68.8973 ms
+Time taken to pop all elements from heap1:      10621.5460 ms
+Time taken to pop all elements from heap2:      10740.3324 ms
+Time taken to pop all elements from heap3:      0.0006 ms
+Time taken to pop all elements from heap4:      413.8690 ms
+
+
+Inbuilt implementaion is much faster because:
+1. heapq is implemented in C.
+2. heapq uses array insead of tree.

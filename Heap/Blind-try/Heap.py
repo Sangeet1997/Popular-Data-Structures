@@ -194,7 +194,7 @@ if __name__ == "__main__":
     for i in range(1000000): # array of 1 million random numbers
         arr.append(random.randint(0,1000))
     end_time = time.perf_counter()
-    print(f"Time taken to generate numbers:\t\t\t{(end_time - start_time) * 1000:.4f} ms")
+    print(f"Time taken to generate 1M numbers:\t\t{(end_time - start_time) * 1000:.4f} ms")
     
     # initilizing with arr
     start_time = time.perf_counter()
@@ -258,5 +258,3 @@ if __name__ == "__main__":
         heapq.heappop(heap4)
     end_time = time.perf_counter()
     print(f"Time taken to pop all elements from heap4:\t{(end_time - start_time) * 1000:.4f} ms")
-
-    print("\n\nInbuilt implementaion is much faster because:\n1. heapq is implemented in C.\n2. heapq uses array insead of tree.")
