@@ -1,13 +1,12 @@
-Time taken to generate 1M numbers:              480.7544 ms
-Time taken to initialize heap1 with array:      730.0152 ms
-Time taken to build heap2 with push operations: 332.0532 ms
-Time taken to sort array with built-in sort:    142.1048 ms
-Time taken to build heap3 with heapq heapify:   46.6959 ms
-Time taken to build heap4 with heapq push:      68.8973 ms
-Time taken to pop all elements from heap1:      10621.5460 ms
-Time taken to pop all elements from heap2:      10740.3324 ms
-Time taken to pop all elements from heap3:      0.0006 ms
-Time taken to pop all elements from heap4:      413.8690 ms
+Time taken to generate 1M numbers:              467.1002 ms
+Time taken to initialize heap1 with array:      856.2552 ms
+Time taken to build heap2 with push operations: 735.1848 ms
+Time taken to build heap3 with heapq heapify:   31.8387 ms
+Time taken to build heap4 with heapq push:      98.4415 ms
+Time taken to pop all elements from heap1:      10723.8665 ms
+Time taken to pop all elements from heap2:      10680.7775 ms
+Time taken to pop all elements from heap3:      805.9144 ms
+Time taken to pop all elements from heap4:      777.6651 ms
 
 
 Inbuilt implementaion is much faster because:
