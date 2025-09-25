@@ -115,12 +115,6 @@ if __name__ == "__main__":
     end_time = time.perf_counter()
     print(f"Time taken to build heap2 with push operations:\t{(end_time - start_time) * 1000:.4f} ms")
 
-    #sorting arr with inbuilt function
-    start_time = time.perf_counter()
-    arr.sort()
-    end_time = time.perf_counter()
-    print(f"Time taken to sort array with built-in sort:\t{(end_time - start_time) * 1000:.4f} ms")
-
     # heap3 with heapq heapify
     heap3 = arr[::]
     start_time = time.perf_counter()
